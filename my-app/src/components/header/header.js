@@ -7,13 +7,12 @@ function Header(){
         <>
          <header className='headerWrapper'>
              <div className='logoContainer'>
-                   <img className='logo' src={logo}></img> 
+                 <Link to='/'><img className='logo' src={logo}></img></Link> 
              </div>
              <div className='links'>
-                    <Link to ='#'>Nuestros estilos</Link>
-                    <Link>Noticas</Link>
-                    <Link>Nosotros</Link>
-                    <Link>Contacto</Link>                                    
+                    <Link to ='/estilos'>Nuestros estilos</Link>
+                    <Link to='/nosotros'>Nosotros</Link>
+                    <Link to='/contacto'>Contacto</Link>                                    
              </div>
          </header>
         </>
