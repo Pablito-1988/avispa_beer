@@ -1,12 +1,14 @@
 
+import './contacto.css'
 
 function Contacto (){
     return(
-        <>
-            <div>
-                <h1>hola hola soy contacto</h1>
+        <div className='container'>
+            <div className='title'>
+                <h2>Contacto</h2>
             </div>
-        </>
+
+        </div>
     )
 }
 

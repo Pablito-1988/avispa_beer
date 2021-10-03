@@ -12,7 +12,7 @@ function Header(){
              <div className='links'>
                     <Link to ='/estilos'>Nuestros estilos</Link>
                     <Link to='/nosotros'>Nosotros</Link>
-                    <Link to='/contacto'>Contacto</Link>                                    
+                    <Link to='/contacto'>Contacto</Link>                                   
              </div>
          </header>
         </>

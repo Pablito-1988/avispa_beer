@@ -1,8 +1,23 @@
 import './main.css'
+import slider2 from './assets/slider2.jpg'
+import slider3 from './assets/slider3.jpg'
+import slider4 from './assets/slider4.jpg'
+import slider5 from './assets/slider5.jpg'
 
-function Main (){
+function Main() {
     return (
-        <div><h4> Soy main </h4></div>
+        <div className='mainContainer'>
+            <div className='mainSlider'>
+                <div className='slider'>
+                    <ul>
+                        <li><img src={slider5} alt=""/></li>
+                        <li><img src={slider2} alt=""/></li>
+                        <li><img src={slider3} alt=""/></li>
+                        <li><img src={slider4} alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     )
 }
 

@@ -1,0 +1,23 @@
+
+
+.footerWrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialLinks{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    color: black;
+}
+
+.socialLinks a {
+    color: black;
+}
+.copy{
+    text-align: center;
+}
