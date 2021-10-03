@@ -12,7 +12,8 @@ function Header(){
              <div className='links'>
                     <Link to ='/estilos'>Nuestros estilos</Link>
                     <Link to='/nosotros'>Nosotros</Link>
-                    <Link to='/contacto'>Contacto</Link>                                   
+                    <Link to='/contacto'>Contacto</Link>
+                    <Link to='/login'><i class="far fa-user"></i></Link>                                   
              </div>
          </header>
         </>

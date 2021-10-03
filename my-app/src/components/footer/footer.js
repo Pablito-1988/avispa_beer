@@ -18,7 +18,7 @@ function Footer(){
                     <Link><i class="fab fa-instagram"></i></Link>
                     <Link><i class="fab fa-facebook-square"></i></Link>
                     <Link><i class="far fa-envelope"></i></Link>
-                </div>
+                </div>  
             </div>
          <p className='copy'>«Copyright {date} por Pablito»</p>   
         </footer>
