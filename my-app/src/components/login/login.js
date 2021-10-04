@@ -5,8 +5,6 @@ function Access() {
     return(
         <div className='formContainer'>
             <div className='form'>
-                <h4 className='formTitle'> Login</h4>
-            
             <Formik
                 initialValues={{
                     user: '',
