@@ -13,19 +13,27 @@ h2{
     margin-bottom: 5px;
     
 }
+h4{
+    color: white;
+}
+a{
+    color: dodgerblue;
+}
 .underline{
-    border: 2px solid white;
+    border: 2px solid dodgerblue;
     width: 100px;
     text-align: center;
     margin: 0 auto;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name: grow; 
     animation-iteration-count:1  
 }
 @keyframes grow {
-    0%{width: 0px;}
+    0%{width: 0px;
+        opacity: 0;}
 
-    100%{width: 100px;}
+    100%{width: 100px;
+        opacity: 1;}
 }
 
 .wrapper{
@@ -40,5 +48,39 @@ h2{
     border: 1px solid white;
     border-radius: 5px;
     
+}
+
+.contactForm{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+.secondRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+}
+textarea{
+    height: 80px;
+    font-size: 18px;
+        width: 100%;
+        resize: none;
+}
+.nameField{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.textField{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.emailField,.phoneField{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
 }
 
