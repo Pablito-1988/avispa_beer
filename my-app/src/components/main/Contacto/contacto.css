@@ -1,4 +1,4 @@
-.container{
+.contactContainer{
     background-image: url('./assets/background.jpg');
     display: flex;
     width: 100%;
@@ -10,5 +10,35 @@ h2{
     font-family: 'Holtwood One SC', serif;
     color: white;
     font-size: 30px;
+    margin-bottom: 5px;
+    
+}
+.underline{
+    border: 2px solid white;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    animation-duration: 3s;
+    animation-name: grow; 
+    animation-iteration-count:1  
+}
+@keyframes grow {
+    0%{width: 0px;}
+
+    100%{width: 100px;}
+}
+
+.wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 80vh;
+    margin-left: 10%;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    
 }
 
