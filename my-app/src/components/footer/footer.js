@@ -22,7 +22,6 @@ function Footer(){
             </div>
          <p className='copy'>«Copyright {date} por Pablito»</p>   
         </footer>
-        
         </>
     )
 }
