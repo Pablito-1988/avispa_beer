@@ -80,7 +80,7 @@ function Contacto (){
                                  className='text'/> 
                             <ErrorMessage name='text' className='errors' component='span' />  
                             </div>
-                        <button type='submit'>Enviar</button>
+                        <button className='contactSubmit' type='submit'>Enviar</button>
                        
                        </Form>
                    )}

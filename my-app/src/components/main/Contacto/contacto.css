@@ -21,10 +21,10 @@ a{
 }
 .underline{
     border: 2px solid dodgerblue;
-    width: 100px;
+    width: 150px;
     text-align: center;
     margin: 0 auto;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-name: grow; 
     animation-iteration-count:1  
 }
@@ -32,7 +32,7 @@ a{
     0%{width: 0px;
         opacity: 0;}
 
-    100%{width: 100px;
+    100%{width: 150px;
         opacity: 1;}
 }
 
@@ -65,7 +65,6 @@ a{
 textarea{
     height: 80px;
     font-size: 18px;
-        width: 100%;
         resize: none;
 }
 .nameField{
@@ -82,5 +81,19 @@ textarea{
     display: flex;
     flex-direction: column;
     width: 45%;
+}
+
+.contactSubmit{
+    width: 15%;
+    height: 4vh;
+    margin-top: 15px;
+    margin-left: 50vw;
+    transition: 0.5s;
+    background-color: dodgerblue;
+}
+
+.contactSubmit:hover{
+    background-color: rgb(53, 175, 53);
+    color: white;
 }
 

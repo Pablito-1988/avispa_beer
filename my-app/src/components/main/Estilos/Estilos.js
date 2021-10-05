@@ -1,10 +1,10 @@
-
+import './estilos.css'
 
 function Estilos (){
     return(
         <>
-            <div>
-                <h1>hola hola soy estilos</h1>
+            <div className='stylesContainer'>
+                
             </div>
         </>
     )

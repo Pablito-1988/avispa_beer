@@ -33,22 +33,22 @@ label{
 }
 input{
     margin-bottom: 10px;
-    height: 27px;
+    height: 30px;
     font-size: 18px;
 }
 
 button{
-    background-color: white;
+    background-color: dodgerblue;
+    color: white;
     border-radius: 5px;
     height: 30px;
-    transition: 0.2s;
+    transition: 0.5s;
     font-size: 18px;
 }
 button:hover{
-    background-color: dodgerblue;
+    background-color: rgb(53, 175, 53);
     color: white;
 }
-
 .errors{
     color: red;
     margin-bottom: 5px;
