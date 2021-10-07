@@ -21,7 +21,7 @@ function Estilos (){
                         <h5>soy otro estiylo3
                         </h5>
                     </div>
-                    
+                   
                 </div>
             </div>
         </>

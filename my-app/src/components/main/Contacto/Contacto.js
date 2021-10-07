@@ -1,6 +1,8 @@
 
 import './contacto.css'
 import { Formik, Form, ErrorMessage } from 'formik';
+import emailjs from 'emailjs-com'
+import {  useRef } from 'react'
 
 function Contacto (){
     return(
@@ -33,11 +35,18 @@ function Contacto (){
                          return errors  
                     }}
                     onSubmit={(values)=>{
-                        console.log(values)
+                        
+                                emailjs.sendForm('gmail', 'template_fiz3b0n',values.email, 'user_R2WV8np2I5apUnVMFdjgE')
+                                  .then((result) => {
+                                      console.log(result.text);
+                                  }, (error) => {
+                                      console.log(error.text);
+                                  });
+                        
                     }}
                 >
                    {({ handleChange, setFieldValue}) => ( 
-                       <Form className='contactForm'>
+                       <Form  className='contactForm'>
                            <div className='nameField'>
                            <label>Nombre completo</label>
                            <input
