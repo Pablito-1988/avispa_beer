@@ -1,9 +1,8 @@
 
 import './contacto.css'
-
 import emailjs from 'emailjs-com'
-import {  useRef } from 'react'
-import Modal from './Modal/Modal';
+
+
 
 function Contacto (){
 
@@ -17,6 +16,7 @@ function Contacto (){
           console.log(error.text);
       });
       e.target.reset()
+     
 
     }
     return(
@@ -25,7 +25,7 @@ function Contacto (){
                 <h2>Contacto</h2>
                 <div className='underline'></div>
                 <h4>¡Ponete en contacto con nosotros!  <a href="mailto:avispahomebrew@gmail.com">avispahomebrew@gmail.com</a></h4> 
-                <Modal/>         
+                      
                        <form   onSubmit={sendEmail} className='contactForm'>
                            <div className='nameField'>
                            <label>Nombre completo</label>
