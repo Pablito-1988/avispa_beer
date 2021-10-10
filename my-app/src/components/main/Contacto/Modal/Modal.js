@@ -5,7 +5,7 @@ function Modal (){
         <>
           
             <div>
-                <h3 className='modalDisplay'>Muchas gracias por tu mensaje</h3>
+                <h3 className='modalDisplay'>Muchas gracias por tu mensaje, en breve nos pondremos en contacto.</h3>
             </div>
         </>
     )

@@ -6,7 +6,7 @@ import {useState} from 'react'
 
 
 function Contacto (){
-    const [showModal,setShowModal]= useState(true)
+    const [showModal,setShowModal]= useState(false)
 
     function sendEmail(e){
         e.preventDefault();
