@@ -3,6 +3,7 @@ import './contacto.css'
 
 import emailjs from 'emailjs-com'
 import {  useRef } from 'react'
+import Modal from './Modal/Modal';
 
 function Contacto (){
 
@@ -16,23 +17,24 @@ function Contacto (){
           console.log(error.text);
       });
       e.target.reset()
-      
+
     }
     return(
         <div className='contactContainer'>
             <div className='wrapper'>
                 <h2>Contacto</h2>
                 <div className='underline'></div>
-                <h4>¡Ponete en contacto con nosotros!  <a href="mailto:avispahomebrew@gmail.com">avispahomebrew@gmail.com</a></h4>          
+                <h4>¡Ponete en contacto con nosotros!  <a href="mailto:avispahomebrew@gmail.com">avispahomebrew@gmail.com</a></h4> 
+                <Modal/>         
                        <form   onSubmit={sendEmail} className='contactForm'>
                            <div className='nameField'>
                            <label>Nombre completo</label>
                            <input
                                 type='text'
-                                
                                 name='fullName'
                                 id='fullName'
-                                className='fullName'/>
+                                className='fullName'
+                                required/>
                          
                             </div>
                             <div className='secondRow'>
@@ -40,7 +42,7 @@ function Contacto (){
                                 <label>Email</label>
                                 <input
                                 type='email'
-                                
+                                required
                                 name='email'
                                 id='email'
                                 className='email'/>
@@ -50,7 +52,7 @@ function Contacto (){
                                 <label>Telefono</label>
                                 <input
                                 type='tel'
-                                
+                                required
                                 name='phone'
                                 id='phone'
                                 className='phone'/>
@@ -61,7 +63,7 @@ function Contacto (){
                             <label>Texto</label>
                             <textarea
                                  typeof='text'
-                                 
+                                 required
                                  name='text'
                                  id='text'
                                  className='text'/> 
