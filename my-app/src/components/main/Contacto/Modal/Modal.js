@@ -4,8 +4,8 @@ function Modal (){
     return (
         <>
           
-            <div id="openModal" class="modalDialog">
-                <h3>Muchas gracias por tu mensaje</h3>
+            <div>
+                <h3 className='modalDisplay'>Muchas gracias por tu mensaje</h3>
             </div>
         </>
     )

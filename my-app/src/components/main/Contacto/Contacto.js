@@ -1,10 +1,12 @@
 
 import './contacto.css'
 import emailjs from 'emailjs-com'
-
+import Modal from './Modal/Modal';
+import {useState} from 'react'
 
 
 function Contacto (){
+    const [showModal,setShowModal]= useState(true)
 
     function sendEmail(e){
         e.preventDefault();
@@ -16,6 +18,7 @@ function Contacto (){
           console.log(error.text);
       });
       e.target.reset()
+      setShowModal(true)
      
 
     }
@@ -25,7 +28,7 @@ function Contacto (){
                 <h2>Contacto</h2>
                 <div className='underline'></div>
                 <h4>¡Ponete en contacto con nosotros!  <a href="mailto:avispahomebrew@gmail.com">avispahomebrew@gmail.com</a></h4> 
-                      
+                   {showModal && <Modal/>}
                        <form   onSubmit={sendEmail} className='contactForm'>
                            <div className='nameField'>
                            <label>Nombre completo</label>
